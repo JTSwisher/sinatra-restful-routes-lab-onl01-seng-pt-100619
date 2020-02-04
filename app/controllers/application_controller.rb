@@ -32,6 +32,10 @@ class ApplicationController < Sinatra::Base
     erb :edit 
   end 
   
+  patch '/recipes/:id' do 
+    
+  end 
+  
   post '/recipes' do 
     @recipe = Recipe.create(params)
     
