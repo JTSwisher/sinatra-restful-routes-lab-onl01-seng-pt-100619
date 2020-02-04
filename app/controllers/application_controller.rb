@@ -48,7 +48,7 @@ class ApplicationController < Sinatra::Base
     redirect "/recipes/#{@recipe.id}"
   end 
   
-  delete '/recipe/:id' do 
+  delete '/recipes/:id' do 
     @recipe =Recipe.find(params[:id])
     @recipe.delete
     
